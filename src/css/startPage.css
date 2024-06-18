@@ -65,7 +65,7 @@ body {
   font-size: 1.6em;
   font-weight: bolder;
   background-color: var(--palette5);
-  color: var(--blanco);
+  color: var(--palette1);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -81,8 +81,8 @@ body {
   margin: 4dvh 0 2dvb 0;
   font-size: 130%;
   line-height: 1.6;
-  color: var(--gris);
-  font-family: 'LUNCHTYPE';
+  color: var(--palette1);
+  font-family: 'talk';
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -94,12 +94,13 @@ body {
   }
 }
 .brandText>strong{
+
   filter: drop-shadow(8px 8px 16px rgb(234, 232, 232));
   font-size: 135%;
 }
 .button1 {
   background-color: #ffffff00;
-  color:var(--blanco);
+  color:var(--palette1);
   width: 7em;
   height: 2.5em;
   border: var(--palette4) 0.2em solid;

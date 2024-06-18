@@ -70,7 +70,7 @@ input[type="password"] {
     border: 1px solid #ddd;
     margin-bottom: 15px;
     box-sizing: border-box;
-    background-color: var(--gris);
+    background-color: var(--palette1);
     font-size: 1em;
 }
 
@@ -94,8 +94,8 @@ input[type="submit"] {
 }
 
 .containerBack>p,label{
-    color: var(--gris);
+    color: var(--palette1);
 }
 form>.logoNameForm,.logoForm{
-    color: var(--gris);
+    color: var(--palette1);
 }
