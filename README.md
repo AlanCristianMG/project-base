@@ -1,12 +1,27 @@
-### Clone repository
+> [!TIP]
+> # Qiuck Script
+>
+> ```
+> git clone https://github.com/AlanCristianMG/project-base.git
+> cd project-base
+> git checkout EcoSort
+> npm i
+> npm start
+> ```
 
-### `git clone https://github.com/AlanCristianMG/AMI.git`
+
+## Clone repository
+
+# `git clone https://github.com/AlanCristianMG/project-base.git`
+
+> [!WARNING]
+> Change branch to use EcoSort project with
+>
+> ``` git checkout EcoSort ```
 
 ## Install project
 
 ## `npm install`
-
-> [!NOTE]
 
 ## Available Scripts
 
