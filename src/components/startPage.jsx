@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Importa useNavigate
 import '../css/startPage.css';
-import Logo from '../img/logo/Logo-White-sf.png';
+import Logo from '../img/logo/logo_03.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,13 +25,11 @@ function StartPage() {
           className={`logo ${isRotating ? 'rotate' : ''}`}
           onClick={() => setIsRotating(!isRotating)}
         />
-        <h1 className='logoName'>AMI</h1>
         <p className='brandText'>
-          Tu compañero en el camino hacia una vida más saludable. 
-          Con la mezcla de tecnología avanzada y un enfoque pensado en ti
+        Descubre cómo nuestro sistema inteligente transforma la manera en que gestionamos los residuos. Con EcoSort, clasificar la basura nunca ha sido tan fácil y eficiente. 
         </p>
         <p className='brandText'> 
-          <strong> ¡Es hora de cuidar de ti de una manera fácil y divertida! ¡Únete!</strong>
+          <strong> ¡Únete a nosotros en la misión de un mundo más limpio y sostenible!</strong>
         </p>
         <div className="buttons">
           <button className="button1" onClick={handleNavigate}>
