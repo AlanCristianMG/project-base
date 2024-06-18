@@ -6,7 +6,7 @@
 
 ## `npm install`
 
-> [!WARNING]
+> [!NOTE]
 
 ## Available Scripts
 
