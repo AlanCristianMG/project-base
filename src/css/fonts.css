@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'DIGITALL';
+    src: url('../fonts/01\ Digitall.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'HEMING';
+    src: url('../fonts/heming-variable.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'LUNCHTYPE';
+    src: url('../fonts/lunchtype/Lunchtype22-Regular.ttf') format('truetype');
+  }
+  
+  
+  /* ---------------------------------------------------------------------------- */
+  @font-face {
+    font-family: 'bondist';
+    src: url('../fonts/bondist/Bondist.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'dinofiles';
+    src: url('../fonts/dinofiles/Dinofiles.ttf');
+  }
+  @font-face {
+    font-family: 'pandora';
+    src: url('../fonts/pandora_emotion/PandoraEmotion\ Demo.otf');
+  }
+  @font-face {
+    font-family: 'cafe';
+    src: url('../fonts/this_cafe/This\ Cafe.ttf');
+  }
+  @font-face {
+    font-family: 'talk';
+    src: url('../fonts/zt_talk/ZTTalk-Bold.ttf');
+  }

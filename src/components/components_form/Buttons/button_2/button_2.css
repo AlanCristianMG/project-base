@@ -9,7 +9,7 @@
   display: inline-flex;
   align-items: center;
   gap: .75rem;
-  background-color: var(--astrong);
+  background-color: var(--palette6);
   color: var(--blanco);
   border-radius: 10rem;
   font-weight: 600;
@@ -20,7 +20,7 @@
   text-overflow: ellipsis;
   transition: background-color .3s;
   font-size: 1rem;
-  border-color: var(--astrong);
+  border-color: var(--palette4);
   width: 70%;
   margin: 0 15% 0 15%;
 }
@@ -39,7 +39,7 @@
 }
 
 .button2:hover {
-  background-color: var(--azul);
+  background-color: var(--palette5);
 }
 
 .button2:hover .button__icon-wrapper {

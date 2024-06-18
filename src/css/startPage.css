@@ -1,64 +1,8 @@
-@font-face {
-  font-family: 'DIGITALL';
-  src: url('../fonts/01\ Digitall.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'HEMING';
-  src: url('../fonts/heming-variable.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'LUNCHTYPE';
-  src: url('../fonts/lunchtype/Lunchtype22-Regular.ttf') format('truetype');
-}
+@import url('fonts.css');
+@import url('colors.css');
 
-
-/* ---------------------------------------------------------------------------- */
-@font-face {
-  font-family: 'bondist';
-  src: url('../fonts/bondist/Bondist.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'dinofiles';
-  src: url('../fonts/dinofiles/Dinofiles.ttf');
-}
-@font-face {
-  font-family: 'pandora';
-  src: url('../fonts/pandora_emotion/PandoraEmotion\ Demo.otf');
-}
-@font-face {
-  font-family: 'cafe';
-  src: url('../fonts/this_cafe/This\ Cafe.ttf');
-}
-@font-face {
-  font-family: 'talk';
-  src: url('../fonts/zt_talk/ZTTalk-Bold.ttf');
-}
-
-:root {
-  --azulStrong: #06265af5;
-  --azul: #39A2DB;
-  --astrong: #073944;
-  --gris: #EFF4F7;
-  --blanco: #FFFFFF;
-  --grisStrong: #0d1117;
-  --azulcobalto:#011f4a;
-  --egeo:#;
-  --oscuro:#000a23;
-  --azulmariono:#02152b;
-  --azulmaricla:#021d34;
-  --azulagua:#02253d;
-  
-  --palette1:#e5ece4;
-  --palette2: #dfe3d2;
-  --palette3: #bbcca8;
-  --palette4: #80a480;
-  --palette5: #43654a;
-  --palette6: #213420;
-
-
-}
 p,label,button,input,span{
-  font-family: LUNCHTYPE;
+  font-family: 'talk';
 }
 
 body {
@@ -71,7 +15,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -92,7 +36,7 @@ body {
 .blur-bg {
   background-image: url('../img/fondos/nature.gif');
   background-size: cover;
-  filter: blur(10px);
+  filter: blur(6px);
   position: absolute;
   top: 0;
   right: 0;
@@ -107,29 +51,20 @@ body {
 }
 
 .logo {
-  width: 50%; /* Ajusta el tamaño del logo según tus necesidades */
-  filter: drop-shadow(1px 1px 3px rgba(169, 169, 169, 0.43));
+  width: 50%;
+  filter: drop-shadow(1px 1px 3px rgba(169, 169, 169, 0.5));
+  transition: transform 0.8s ease-in-out; /* Cambio en la duración y tipo de transición */
 }
 .buttons {
   margin-top: 20px;
 }
-/* .logoName{
-  padding: 0%;
-  margin: 0%;
-  color: var(--blanco);
-  font-family: 'DIGITALL';
-  font-size: 12rem;
-  letter-spacing: 2rem;
-  font-style: bold;
-  filter: drop-shadow(8px 8px 16px rgb(255, 255, 255));
-
-} */
 .button1 {
   margin-left: 5px;
   margin-right: 5px;
-  padding: 10px;
-  font-size: 1.2rem;
-  background-color: var(--azul);
+  padding: 1px;
+  font-size: 1.6em;
+  font-weight: bolder;
+  background-color: var(--palette5);
   color: var(--blanco);
   border: none;
   border-radius: 5px;
@@ -144,7 +79,7 @@ body {
 .brandText {
   max-width: 800px;
   margin: 4dvh 0 2dvb 0;
-  font-size: 120%;
+  font-size: 130%;
   line-height: 1.6;
   color: var(--gris);
   font-family: 'LUNCHTYPE';
@@ -160,29 +95,30 @@ body {
 }
 .brandText>strong{
   filter: drop-shadow(8px 8px 16px rgb(234, 232, 232));
+  font-size: 135%;
 }
 .button1 {
   background-color: #ffffff00;
   color:var(--blanco);
-  width: 8.5em;
-  height: 2.9em;
-  border: var(--azul) 0.2em solid;
+  width: 7em;
+  height: 2.5em;
+  border: var(--palette4) 0.2em solid;
   border-radius: 11px;
   text-align: right;
   transition: all 0.6s ease;
 }
 
 .button1:hover {
-  background-color: var(--azul);
+  background-color: var(--palette4);
   cursor: pointer;
 }
 
 .button1 svg {
   width: 2em;
-  margin: 0em 0.8em 1em;
-  position: absolute;
-  display: flex;
-  transition: all 0.6s ease;
+margin: 0em 0.8em 1em;
+position: absolute;
+display: flex;
+transition: all 0.6s ease;
 }
 
 

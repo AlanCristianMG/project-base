@@ -1,0 +1,45 @@
+.container-dash {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "est1 chart-1 chart-1 chart-2 chart-2"
+        "est2 chart-1 chart-1 chart-2 chart-2"
+        ". chart-3 chart-3 chart-3 chart-3"
+        ". chart-3 chart-3 chart-3 chart-3";
+}
+
+.container-dash * {
+    font-family: 'talk';
+    background-color: var(--palette1);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.container-dash>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.est1 {
+    grid-area: est1;
+}
+
+.est2 {
+    grid-area: est2;
+}
+
+.chart-1 {
+    grid-area: chart-1;
+}
+
+.chart-2 {
+    grid-area: chart-2;
+}
+
+.chart-3 {
+    grid-area: chart-3;
+}

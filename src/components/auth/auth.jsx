@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { CSSTransition } from 'react-transition-group';
 import '../../css/auth.css';
-import Logo_black from '../../img/logo/Logo-White-sf.png'; 
+import Logo_black from '../../img/logo/logo_03.png'; 
 import Button1 from '../components_form/Buttons/button_1/button_1';
 import axios from 'axios';
 import {useNavigate} from "react-router-dom"
@@ -30,7 +30,6 @@ function LoginForm({ onSwitchToRegister }) {
   return (
     <form className='form' onSubmit={handleLogin}>
     <img src={Logo_black} className='logoForm' alt="" />
-    <h1 className='logoNameForm'>AMI</h1>
       <label>
         Email:
         <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
@@ -68,7 +67,6 @@ function RegisterForm({ onSwitchToLogin }) {
   return (
     <form className='form' onSubmit={handleRegister}>
         <img src={Logo_black} className='logoForm' alt="" />
-    <h1 className='logoNameForm' >AMI</h1>
       <label>
         Firstname:
         <input type="text" name="firstname" value={firstname} onChange={(e)=> setFirstname(e.target.value) }/>
