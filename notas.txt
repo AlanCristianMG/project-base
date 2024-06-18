@@ -1,0 +1,25 @@
+dependencias instaladas:
+express:framework para backend
+mysql: para conexion de base de datos
+cors: gestionar peticiones entre dominios(puertos)
+axios: para peticiones http, pincipalmente a la api
+Se remplazara//knex: para integracion de migraciones de la base de datos
+sequelize: remplazo de knex
+
+Creacion de Modelos y Creacion de migraciones(el comando crea ambas en sus respectivas carpetas)
+
+    npx sequelize-cli model:generate --name NOMBRE_DEL_MODELO --attributes attributo1:tipo_de_dato,attributo2:tipo_de_dato
+
+Creacion de Seeders
+
+    npx sequelize-cli seed:generate --name nombre del seeder
+
+
+para ejecutar las migraciones de la base de datos crear la base de datos ami desde el gestor(phpmyadmin)
+Despues ejecutar: 
+    npx sequelize-cli db:migrate
+    npx sequelize-cli db:seed:all
+Se crearan las tablas
+Para el iniciar el sistema se tiene que levantar:
+    El servidor de React con : npm start
+    El servidor del backend con : node ./src/services/server.js

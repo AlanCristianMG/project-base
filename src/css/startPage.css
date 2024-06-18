@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'DIGITALL';
+  src: url('../fonts/01\ Digitall.ttf') format('truetype');
+  /* Puedes agregar formatos adicionales según el tipo de archivo de tu fuente */
+}
+@font-face {
+  font-family: 'HEMING';
+  src: url('../fonts/heming-variable.ttf') format('truetype');
+  /* Puedes agregar formatos adicionales según el tipo de archivo de tu fuente */
+}
+@font-face {
+  font-family: 'LUNCHTYPE';
+  src: url('../fonts/lunchtype/Lunchtype22-Regular.ttf') format('truetype');
+  /* Puedes agregar formatos adicionales según el tipo de archivo de tu fuente */
+}
+:root {
+  --azulStrong: #06265af5;
+  --azul: #39A2DB;
+  --astrong: #073944;
+  --gris: #EFF4F7;
+  --blanco: #FFFFFF;
+  --grisStrong: #0d1117;
+  --azulcobalto:#011f4a;
+  --egeo:#;
+  --oscuro:#000a23;
+  --azulmariono:#02152b;
+  --azulmaricla:#021d34;
+  --azulagua:#02253d;
+  --azul:;
+
+}
+p,label,button,input,span{
+  font-family: LUNCHTYPE;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: '';
+}
+
+.blur-bg {
+  background-image: url('../img/fondos/space.gif');
+  background-size: cover;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 30%; /* Ajusta el tamaño del logo según tus necesidades */
+  filter: drop-shadow(1px 1px 3px rgba(169, 169, 169, 0.43));
+}
+.buttons {
+  margin-top: 20px;
+}
+.logoName{
+  padding: 0%;
+  margin: 0%;
+  color: var(--blanco);
+  font-family: 'DIGITALL';
+  font-size: 12rem;
+  letter-spacing: 2rem;
+  font-style: bold;
+  filter: drop-shadow(8px 8px 16px rgb(255, 255, 255));
+
+}
+.button1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: var(--azul);
+  color: var(--blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logo.rotate {
+  transition: transform 0.5s ease;
+  transform: rotate(360deg);
+}
+/* Agrega estos estilos a tu archivo CSS */
+
+.brandText {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 120%;
+  line-height: 1.6;
+  color: var(--gris);
+  font-family: 'LUNCHTYPE';
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Media query para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+  .brandText {
+      font-size: 14px;
+  }
+}
+.brandText>strong{
+  filter: drop-shadow(8px 8px 16px rgb(234, 232, 232));
+}
+.button1 {
+  background-color: #ffffff00;
+  color:var(--blanco);
+  width: 8.5em;
+  height: 2.9em;
+  border: var(--azul) 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button1:hover {
+  background-color: var(--azul);
+  cursor: pointer;
+}
+
+.button1 svg {
+  width: 2em;
+  margin: 0em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+
+.button:hover svg {
+  transform: translateX(7px);
+}
+
+.text_1 {
+  margin: 0 1.5em
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

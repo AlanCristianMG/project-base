@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "ami",
+    "host": "localhost",
+    "dialect": "mysql",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_data"
+  },
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "ami",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "",
+    "database": "ami",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

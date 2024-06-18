@@ -1,0 +1,19 @@
+.navHome{
+    background-color: var(--astrong);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.logoNavbar{
+    height: 7vh;
+    margin: 1vh 0 1vh 1vw;
+    filter: drop-shadow(#ffffff 5px 5px 20px);
+}
+.nameLogo{
+    margin: 1vw 0 1vh 1vw;
+    color: var(--blanco);
+    font-family: "DIGITALL";
+    font-size: 6vh;
+    filter: drop-shadow(#ffffff 5px 5px 20px);
+}

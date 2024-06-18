@@ -1,0 +1,119 @@
+.containerBack {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='87.8' stroke-opacity='0.91' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg transform='scale(0.595)' style='transform-origin:center'%3E%3Cg transform='rotate(122.4 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-96 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2339A2DB' href='%23a' transform='rotate(6 0 0) scale(1.06)'/%3E%3Cuse stroke='%23369bd1' href='%23a' transform='rotate(12 0 0) scale(1.12)'/%3E%3Cuse stroke='%233294c7' href='%23a' transform='rotate(18 0 0) scale(1.18)'/%3E%3Cuse stroke='%232f8dbd' href='%23a' transform='rotate(24 0 0) scale(1.24)'/%3E%3Cuse stroke='%232c86b3' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%23287fa9' href='%23a' transform='rotate(36 0 0) scale(1.36)'/%3E%3Cuse stroke='%2325789f' href='%23a' transform='rotate(42 0 0) scale(1.42)'/%3E%3Cuse stroke='%23227195' href='%23a' transform='rotate(48 0 0) scale(1.48)'/%3E%3Cuse stroke='%231e6a8a' href='%23a' transform='rotate(54 0 0) scale(1.54)'/%3E%3Cuse stroke='%231b6380' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23185c76' href='%23a' transform='rotate(66 0 0) scale(1.66)'/%3E%3Cuse stroke='%2314556c' href='%23a' transform='rotate(72 0 0) scale(1.72)'/%3E%3Cuse stroke='%23114e62' href='%23a' transform='rotate(78 0 0) scale(1.78)'/%3E%3Cuse stroke='%230e4758' href='%23a' transform='rotate(84 0 0) scale(1.84)'/%3E%3Cuse stroke='%230a404e' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23073944' href='%23a' transform='rotate(96 0 0) scale(1.96)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: 185vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.form {
+    display: grid;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(0px); /* Ajusta el desplazamiento inicial para corregir el problema */
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(-20px); /* Devuelve el elemento a su posición original */
+    transition: opacity 100ms ease-in, transform 100ms ease-in; /* Ajusta la duración y la función de temporización */
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateX(20px); /* Ajusta el desplazamiento al salir para corregir el problema */
+    transition: opacity 100ms ease-in-out, transform 100ms ease-in-out; /* Ajusta la duración y la función de temporización */
+}
+
+form {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.71);
+    margin: 0 0 1em 0;
+    min-height: 80%;
+    min-width: 25%;
+    background: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);    
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: var(--gris);
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: #5c6bc0;
+    color: #e7e7e7;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.logoForm {
+    width: 54%; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    filter: drop-shadow(15px 40px 40px rgba(0, 0, 0, 1));
+
+}
+
+.logoNameForm {
+    /* background-color: #1b6993; */
+    display: flex;
+    align-self: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    color: var(--blanco);
+    font-family: 'DIGITALL';
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    font-weight: bold; /* Cambié 'font-style' a 'font-weight' para negrita */
+    filter: drop-shadow(4px 4px 8px rgb(75, 75, 75,0.5));
+}
+.containerBack>p,label{
+    color: var(--gris);
+}
+form>.logoNameForm,.logoForm{
+    color: var(--gris);
+}
