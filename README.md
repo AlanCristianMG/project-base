@@ -1,3 +1,9 @@
+> [!NOTE]
+> To pull chages use
+>```
+> git pull origin EcoSort
+>```
+
 > [!TIP]
 > # Qiuck Script
 >
